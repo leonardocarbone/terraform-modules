@@ -1,0 +1,14 @@
+name: 'Terraform Actions'
+
+on:
+  push:
+    branches:
+      - master
+      - develop
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout'
+        uses: actions/checkout@v2
